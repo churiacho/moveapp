@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  date_field: 2020-01-13
+  duration_minutes: 1
+  cover_image: MyString
+  user: one
+
+two:
+  title: MyString
+  date_field: 2020-01-13
+  duration_minutes: 1
+  cover_image: MyString
+  user: two
