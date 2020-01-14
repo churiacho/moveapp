@@ -56,3 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'friendly_id', '~> 5.1.0'
+gem 'carrierwave', '~> 2.0'
+gem 'fog-aws'
