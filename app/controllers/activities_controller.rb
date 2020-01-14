@@ -64,11 +64,11 @@ class ActivitiesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_activity
-      @activity = Activity.find(params[:id])
+      @activity = Activity.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def activity_params
-      params.require(:activity).permit(:title, :date_field, :duration_minutes, :cover_image, :user_id)
+      params.require(:activity).permit(:title, :date_field, :duration_minutes, :cover_image, :user_id, :slug)
     end
 end
