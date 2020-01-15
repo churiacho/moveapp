@@ -1,6 +1,6 @@
 class User < ApplicationRecord 
-  mount_uploader :img, UserUploader
   has_many :activities
+  mount_uploader :img, PhotoUploader
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable, :trackable, :lockable, password_length: 10..70
