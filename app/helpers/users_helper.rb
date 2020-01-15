@@ -11,4 +11,7 @@ module UsersHelper
         gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
         image_tag(gravatar_url, alt: user.first_name + ' ' + user.last_name, class: "rounded-circle header-profile-img")
     end
+
+    <%= gravatar_for @user %>
+    <%= header_gravatar_for(current_user) %>
 end
